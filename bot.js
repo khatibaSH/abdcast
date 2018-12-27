@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "$";
+var prefix = "&";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -28,7 +28,7 @@ client.user.setStatus("dnd")
 });
 
 var adminprefix = '&'
-const developers = ['465929376085573634','522045992543977484'] //الاي دى حقك
+const developers = ['221499666641059841'] //الاي دى حقك
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
